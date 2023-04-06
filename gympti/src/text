@@ -1,0 +1,96 @@
+
+/*<div className="Optionament">
+<Link to="/" style={{ textDecoration: "none" }}>
+  <a className="Optionalogin" href="">
+    로그인
+  </a>
+</Link>
+<span className="Backslash"> | </span>
+<Link to="/" style={{ textDecoration: "none" }}>
+  <a className="Optionasignup" href="">
+    회원가입
+  </a>
+</Link>
+<span className="Backslash"> | </span>
+<Link to="/" style={{ textDecoration: "none" }}>
+  <a className="Optionafindidandpassword" href="">
+    아이디/비밀번호 찾기
+  </a>
+</Link>
+</div>*/
+
+/*-------------------------------------------------*/
+
+.Idinputment, .Pwinputment{
+    font-size: 15px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    color: #A3A3A3;
+}
+
+.Idinputbox, .Pwinputbox{
+    width: 310px;
+    height: 50px;
+    outline: 0px;
+    border-radius: 15px;
+    border: 1px solid blue;
+    font-size: 18px;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+    
+}
+
+input::placeholder {
+    color: #A3A3A3;
+  }
+
+.Loginform{
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.Idbox{
+    margin-top: 60px;
+}
+
+.Pwbox{
+    margin-top: 25px;
+}
+
+.Loginboxborder{
+    width: 410px;
+    height: 390px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.Loginbutton{
+    width: 350px;
+    height: 50px;
+    outline: 0px;
+    border: 0px;
+    border-radius: 50px;
+    background-color: blue;
+    font-size: 22px;
+    color: #fff;
+    margin-top: 16px;
+}
+
+.Loginlogoimg{
+    margin-top: 271px;
+    margin-left: 45%;
+}
+
+.Loginkeepstatebox{
+    margin-top: 15px;
+}
+
+.Loginkeepstatecheckbox{
+    border-radius: 50px;
+}
+
+.Loginkeepstatecheckboxment{
+    font-size: 15px;
+    margin-left: 5px;
+}
