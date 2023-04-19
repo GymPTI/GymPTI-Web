@@ -4,6 +4,7 @@ import LoginPage from "./views/Login/Login";
 import FindidPage from "./views/Findid/Findid";
 import FindpwPage from "./views/Findpw/Findpw";
 import MainPage from "./views/Main/Main";
+import SignupPage from "./views/Signup/Signup";
 
 function Router() {
   return (
@@ -14,6 +15,7 @@ function Router() {
         <Route exact path="/findpw" element={<FindpwPage />}></Route>
         <Route exact path="/" element={<MainPage />}></Route>
         <Route exact path="/main" element={<MainPage />}></Route>
+        <Route exact path="/signup" element={<SignupPage />}></Route>
       </Routes>
     </BrowserRouter>
   );

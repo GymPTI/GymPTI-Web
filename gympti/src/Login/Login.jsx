@@ -1,22 +1,29 @@
 import { Link } from "react-router-dom";
-import React from "react";
+import React, { useState } from "react";
 import "./Login.style.css";
 import gymptilogo from "../../src/img/gymptilogo.svg";
+import { useLogin } from "../hooks/Auth/useLogin";
 
 function Login() {
+  const { id, pw, onChange, onSubmit } = useLogin();
+  
   return (
     <div className="Loginalldiv">
       <header className="Loginheader">
         <img className="Loginlogoimg" src={gymptilogo} />
       </header>
       <div className="Loginboxborder">
-        <form className="Loginform">
+        <form className="Loginform" onSubmit={onSubmit}>
           <div className="Idbox">
             <p className="Idinputment">ID</p>
             <input
               className="Idinputbox"
               type="Text"
               placeholder="아이디를 입력해주세요."
+              value={id}
+              onChange={onChange}
+              name="id"
+              required
             ></input>
           </div>
           <div className="Pwbox">
@@ -25,6 +32,10 @@ function Login() {
               className="Pwinputbox"
               type="password"
               placeholder="비밀번호를 입력해주세요."
+              name="pw"
+              value={pw}
+              onChange={onChange}
+              required
             ></input>
           </div>
           <div className="Loginkeepstatebox">

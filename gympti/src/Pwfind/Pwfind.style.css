@@ -1,0 +1,110 @@
+/* Mobile - Portrait */
+@media (max-width: 992px) {
+    .Pwfindalldiv {
+        width: 100vw;
+        height: 100vh;
+        background-color: #f2f2f7;
+    }
+
+    .Pwfindlogoimg {
+        display: block;
+        margin: 0 auto;
+        width: 120px;
+        padding-top: 70px;
+    }
+
+    .Pwfindallment {
+        text-align: center;
+    }
+
+    .Pwfindfirstment,
+    .Pwfindsecondment {
+        font-size: 18px;
+        font-weight: lighter;
+    }
+
+    .Pwfindfirstment {
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .Pwfindidinput {
+        width: 260px;
+        height: 50px;
+        border: 1.5px solid #7000FF;
+        border-radius: 15px;
+        outline: none;
+        padding-inline-start: 20px;
+        padding-inline-end: 20px;
+    }
+
+}
+
+
+/*-----------------------------------------------------*/
+/*-----------------------------------------------------*/
+/*-----------------------------------------------------*/
+/*-----------------------------------------------------*/
+
+
+/* Desktop */
+@media (min-width: 992px) {
+    .Pwfindalldiv {
+        width: 100vw;
+        height: 100vh;
+        background-color: #f2f2f7;
+    }
+
+    .Pwfindlogoimg {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        padding-top: 140px;
+    }
+
+    .Pwfindallment {
+        text-align: center;
+    }
+
+    .Pwfindfirstment,
+    .Pwfindsecondment {
+        font-size: 20px;
+        font-weight: lighter;
+    }
+
+    .Pwfindfirstment {
+        margin-top: 40px;
+        margin-bottom: 5px;
+    }
+
+    .Pwfindidinput {
+        margin-top: 40px;
+        width: 310px;
+        height: 50px;
+        border: 2px solid #7000FF;
+        border-radius: 15px;
+        outline: none;
+        padding-inline-start: 20px;
+        padding-inline-end: 20px;
+
+    }
+
+    .Pwfindnextbutton {
+        margin-top: 40px;
+        width: 354px;
+        height: 50px;
+        background-color: #7000FF;
+        border: none;
+        border-radius: 15px;
+        font-size: 18px;
+        font-weight: 40px;
+        color: #fff;
+    }
+
+    .Pwfindallinputbutton {
+        left: 670px;
+    }
+
+}
+
+/*-----------------------------------------------------*/
