@@ -6,7 +6,7 @@ import { useLogin } from "../hooks/Auth/useLogin";
 
 function Login() {
   const { id, pw, onChange, onSubmit } = useLogin();
-  
+
   return (
     <div className="Loginalldiv">
       <header className="Loginheader">
@@ -64,6 +64,12 @@ function Login() {
         <Link to="/findpw" style={{ textDecoration: "none" }}>
           <a className="Optionapw" href="">
             비밀번호 찾기
+          </a>
+        </Link>
+        <span className="Backslash"> | </span>
+        <Link to="/signup" style={{ textDecoration: "none" }}>
+          <a className="Optionasignup" href="">
+            회원가입
           </a>
         </Link>
       </div>

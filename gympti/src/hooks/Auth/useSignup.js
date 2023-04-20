@@ -25,14 +25,17 @@ export function useSignup() {
         password: CryptoJS.SHA512(pw).toString(),
       };
       try {
-        const data = await axios.post(`${CONFIG.SERVER}/auth/register`, signupData);
+        const data = await axios.post(
+          `${CONFIG.SERVER}/auth/register`,
+          signupData
+        );
         console.log(data);
         alert("성공");
-      }catch (e) {
+      } catch (e) {
         console.log(e);
       }
     }
   };
 
-  return {id, pw, email, name, onChange, onSubmit};
+  return { id, pw, email, name, onChange, onSubmit };
 }
