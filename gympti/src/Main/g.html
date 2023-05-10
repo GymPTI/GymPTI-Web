@@ -1,0 +1,182 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.36.0/apexcharts.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>그래프</title>
+  </head>
+  <body>
+    <main id="main" class="main">
+      <section class="section">
+        <!-- Line Chart -->
+        <div id="lineChart"></div>
+
+        <!-- Radial Bar Chart -->
+        <div id="radialBarChart"></div>
+        <div id="chart"></div>
+        <script>
+          //----------------------------------------------------------------------------------------------------------------------
+
+          document.addEventListener("DOMContentLoaded", () => {
+            new ApexCharts(document.querySelector("#lineChart"), {
+              series: [
+                {
+                  name: "Desktops",
+                  data: [10, 41, 35, 51, 49, 62, 69, 91, 148],
+                },
+              ],
+              chart: {
+                height: 350,
+                type: "line",
+                zoom: {
+                  enabled: false,
+                },
+              },
+              dataLabels: {
+                enabled: false,
+              },
+              stroke: {
+                curve: "straight",
+              },
+              title: {
+                text: "Product Trends by Month",
+                align: "left",
+              },
+              grid: {
+                row: {
+                  colors: ["#f3f3f3", "transparent"],
+                  opacity: 0.5,
+                },
+              },
+              xaxis: {
+                categories: [
+                  "Jan",
+                  "Feb",
+                  "Mar",
+                  "Apr",
+                  "May",
+                  "Jun",
+                  "Jul",
+                  "Aug",
+                  "Sep",
+                ],
+              },
+            }).render();
+          });
+
+          //----------------------------------------------------------------------------------------------------------------------
+
+          document.addEventListener("DOMContentLoaded", () => {
+            new ApexCharts(document.querySelector("#radialBarChart"), {
+              series: [44, 55, 67, 83],
+              chart: {
+                height: 350,
+                type: "radialBar",
+                toolbar: {
+                  show: true,
+                },
+              },
+
+              plotOptions: {
+                radialBar: {
+                  dataLabels: {
+                    name: {
+                      fontSize: "22px",
+                    },
+                    value: {
+                      fontSize: "16px",
+                    },
+                    total: {
+                      show: true,
+                      label: "Total",
+                      formatter: function (w) {
+                        // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function
+                        return 249;
+                      },
+                    },
+                  },
+                },
+              },
+              labels: ["Apples", "Oranges", "Bananas", "Berries"],
+            }).render();
+          });
+
+          //----------------------------------------------------------------------------------------------------------------------
+
+          document.addEventListener("DOMContentLoaded", () => {
+            new ApexCharts(document.querySelector("#chart"), {
+              series: [
+                {
+                  name: "High - 2013",
+                  data: [28, 29, 33, 36, 32, 32, 33],
+                },
+                {
+                  name: "Low - 2013",
+                  data: [12, 11, 14, 18, 17, 13, 13],
+                },
+              ],
+              chart: {
+                height: 350,
+                type: "line",
+                dropShadow: {
+                  enabled: true,
+                  color: "#000",
+                  top: 18,
+                  left: 7,
+                  blur: 10,
+                  opacity: 0.2,
+                },
+                toolbar: {
+                  show: false,
+                },
+              },
+              colors: ["#77B6EA", "#545454"],
+              dataLabels: {
+                enabled: true,
+              },
+              stroke: {
+                curve: "smooth",
+              },
+              title: {
+                text: "제목",
+                align: "center",
+              },
+              grid: {
+                borderColor: "#e7e7e7",
+                row: {
+                  colors: ["#f3f3f3", "transparent"], // takes an array which will be repeated on columns
+                  opacity: 0.5,
+                },
+              },
+              markers: {
+                size: 1,
+              },
+              xaxis: {
+                categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+                title: {
+                  text: "Month",
+                },
+              },
+              yaxis: {
+                title: {
+                  text: "Temperature",
+                },
+                min: 5,
+                max: 40,
+              },
+              legend: {
+                position: "top",
+                horizontalAlign: "right",
+                floating: true,
+                offsetY: -25,
+                offsetX: -5,
+              },
+            }).render();
+          });
+
+          //----------------------------------------------------------------------------------------------------------------------
+        </script>
+        <!-- End Radial Bar Chart -->
+      </section>
+    </main>
+  </body>
+</html>
