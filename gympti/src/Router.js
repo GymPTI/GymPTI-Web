@@ -5,7 +5,7 @@ import FindidPage from "./views/Findid/Findid";
 import FindpwPage from "./views/Findpw/Findpw";
 import MainPage from "./views/Main/Main";
 import SignupPage from "./views/Signup/Signup";
-import EmailCheckPage from "./views/Signup/EmailChack";
+import EmailCheckPage from "./views/EmailChack/EmailChack";
 
 function Router() {
   return (

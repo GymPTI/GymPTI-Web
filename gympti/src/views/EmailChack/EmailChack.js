@@ -1,5 +1,5 @@
 import React from "react";
-import EmailCheck from "../../SignUp/EmailCheck";
+import EmailCheck from "../../EmailChack/EmailCheck";
 
 function EmailCheckPage() {
   return <EmailCheck></EmailCheck>;
