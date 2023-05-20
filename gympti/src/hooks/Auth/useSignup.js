@@ -17,18 +17,17 @@ export function useSignup() {
   };
 
   const onSubmit = async (e) => {
+    alert("test");
     if (id && pw && email && name) {
       const signupData = {
         userId: id,
-        userName: name,
+        nickname: name,
         email: email,
         password: CryptoJS.SHA512(pw).toString(),
       };
+      console.log(signupData);
       try {
-        const data = await axios.post(
-          `${CONFIG.SERVER}/auth/register`,
-          signupData
-        );
+        const data = await axios.post(`/auth/register`, signupData);
         console.log(data);
         alert("성공");
       } catch (e) {

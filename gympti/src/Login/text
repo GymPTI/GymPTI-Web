@@ -1,0 +1,86 @@
+<!---
+import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import "./Login.style.css";
+import { useLogin } from "../hooks/Auth/useLogin";
+import gymptilogo from "../../src/img/gptilogin.png";
+
+function Login() {
+  const { id, pw, onChange, onSubmit } = useLogin();
+
+  return (
+    <div className="Loginalldiv">
+      <div className="Loginboxborder">
+        <div className="Idbox">
+          <p className="Idinputment">ID</p>
+          <input
+            className="Idinputbox"
+            type="Text"
+            placeholder="아이디를 입력해주세요."
+            value={id}
+            onChange={onChange}
+            name="id"
+            required
+          ></input>
+        </div>
+        <div className="Pwbox">
+          <p className="Pwinputment">PW</p>
+          <input
+            className="Pwinputbox"
+            type="password"
+            placeholder="비밀번호를 입력해주세요."
+            name="pw"
+            value={pw}
+            onChange={onChange}
+            required
+          ></input>
+        </div>
+        <div className="Loginbottonbox">
+          <button className="Loginbutton" onClick={onSubmit}>
+            로그인
+          </button>
+        </div>
+      </div>
+      <div className="Optionament">
+        <Link to="/findid" style={{ textDecoration: "none" }}>
+          <a className="Optionaid" href="">
+            아이디 찾기
+          </a>
+        </Link>
+        <span className="Backslash"> | </span>
+        <Link to="/findpw" style={{ textDecoration: "none" }}>
+          <a className="Optionapw" href="">
+            비밀번호 찾기
+          </a>
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+export default Login;
+-->
+import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import "./Login.style.css";
+import { useLogin } from "../hooks/Auth/useLogin";
+
+
+function Login() {
+  const { id, pw, onChange, onSubmit } = useLogin();
+
+  return (
+    <div className="body">
+      <div className="SignupLink"></div>
+      <div>
+        <h1 className="LogoName">GymPTI</h1>
+        <p className="WelcomeMessage">나만의 AI PT쌤을 만나러 가볼까요?</p>
+      </div>
+    </div>
+  );
+}
+
+export default Login;
+
+
+<img className="img" src={gymptilogo} alt="실패"></img>

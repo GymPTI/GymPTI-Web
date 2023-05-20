@@ -1,55 +1,77 @@
+import { Link } from "react-router-dom";
 import React, { useState } from "react";
-import gymptilogo from "../../src/img/gymptilogo.svg";
+import "../SignUp/Signup.style.css";
 import { useSignup } from "../hooks/Auth/useSignup";
 
 function Signup() {
   const { id, pw, email, name, onChange, onSubmit } = useSignup();
 
   return (
-    <div>
-      <form onSubmit={onSubmit}>
-        <div>
+    <div className="SignupBody">
+      <div className="AllLoginLink">
+        <Link to="/login" className="LoginLink">
+          Login →
+        </Link>
+      </div>
+      <h1 className="LogoName">GymPTI</h1>
+      <div>
+        <p className="WelcomeMessage">나만의 AI PT쌤을 만나러 가볼까요?</p>
+      </div>
+      <div className="SignupBox">
+        <div className="SignupIdBox">
+          <p className="SignupIdInputMent">Id</p>
           <input
-            className="Signupidinputbox"
+            className="SignupIdInputbox"
             type="text"
-            placeholder="아이디를 입력해주세요"
+            placeholder="아이디를 입력하세요"
             value={id}
             onChange={onChange}
             name="id"
             required
           />
+        </div>
+        <div className="SignupPwBox">
+          <p className="SignupPwInputMent">Pw</p>
           <input
-            className="Signuppwinputbox"
+            className="SignupPwInputbox"
             type="password"
-            placeholder="비밀번호를 입력해주세요"
+            placeholder="비밀번호를 입력하세요"
             value={pw}
             onChange={onChange}
             name="pw"
             required
           />
+        </div>
+
+        <div className="SignupEmailBox">
+          <p className="SignupEmailInputMent">Email</p>
           <input
-            className="Signupemailinputbox"
+            className="SignupEmailInputbox"
             type="email"
-            placeholder="이메일을 입력해주세요"
+            placeholder="이메일을 입력하세요"
             value={email}
             onChange={onChange}
             name="email"
             required
           />
+        </div>
+
+        <div className="SignupNameBox">
+          <p className="SignupPwInputMent">Name</p>
           <input
-            className="Signupnameinputbox"
+            className="SignupNameInputbox"
             type="text"
-            placeholder="이름을 입력해주세요"
+            placeholder="이름을 입력하세요"
             value={name}
             onChange={onChange}
             name="name"
             required
           />
         </div>
-        <button type="submit" className="Signupbutton">
-          회원가입
+        <button className="SignupButton" onClick={onSubmit}>
+          SIGN UP
         </button>
-      </form>
+      </div>
     </div>
   );
 }

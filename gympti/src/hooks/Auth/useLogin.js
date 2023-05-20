@@ -19,7 +19,7 @@ export function useLogin() {
         password: CryptoJS.SHA512(pw).toString(),
       };
       try {
-        const data = await axios.post(`${CONFIG.SERVER}/auth/login`, loginData);
+        const data = await axios.post(`/auth/login`, loginData);
         console.log(data);
         alert("성공");
       } catch (e) {

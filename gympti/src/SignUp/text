@@ -1,0 +1,59 @@
+<!---
+import React, { useState } from "react";
+import gymptilogo from "../../src/img/gymptilogo.svg";
+import { useSignup } from "../hooks/Auth/useSignup";
+
+function Signup() {
+  const { id, pw, email, name, onChange, onSubmit } = useSignup();
+
+  return (
+    <div>
+      
+        <div>
+          <input
+            className="Signupidinputbox"
+            type="text"
+            placeholder="아이디를 입력해주세요"
+            value={id}
+            onChange={onChange}
+            name="id"
+            required
+          />
+          <input
+            className="Signuppwinputbox"
+            type="password"
+            placeholder="비밀번호를 입력해주세요"
+            value={pw}
+            onChange={onChange}
+            name="pw"
+            required
+          />
+          <input
+            className="Signupemailinputbox"
+            type="email"
+            placeholder="이메일을 입력해주세요"
+            value={email}
+            onChange={onChange}
+            name="email"
+            required
+          />
+          <input
+            className="Signupnameinputbox"
+            type="text"
+            placeholder="이름을 입력해주세요"
+            value={name}
+            onChange={onChange}
+            name="name"
+            required
+          />
+        </div>
+        <button className="Signupbutton" onClick={onSubmit}>
+          회원가입
+        </button>
+      
+    </div>
+  );
+}
+
+export default Signup;
+-->

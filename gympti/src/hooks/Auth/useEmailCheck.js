@@ -13,9 +13,13 @@ export function useEmailCheck() {
     alert(email);
 
     axios
-      .post(`/auth/sendMailVerification`, {
-        email: email,
-      })
+      .post(
+        `http://veryhotseo81.duckdns.org:8888/gympti/email/sendMailVerification`,
+        {
+          email: email,
+        },
+        { withCredentials: true }
+      )
       .then(function (response) {
         let message = response.data.message;
         console.log(message);
@@ -27,12 +31,18 @@ export function useEmailCheck() {
 
   const certifiedEmailButtonClick = (e) => {
     alert("성공");
+    console.log(email);
+    console.log(certifiedemail);
 
     axios
-      .post(`/auth/validateMailVerification`, {
-        email: email,
-        emailVerificationCode: certifiedemail,
-      })
+      .post(
+        `http://veryhotseo81.duckdns.org:8888/gympti/email/validateMailVerification`,
+        {
+          email: email,
+          emailVerificationCode: certifiedemail,
+        },
+        { withCredentials: true }
+      )
       .then(function (response) {
         let message = response.data.message;
         console.log(message);
