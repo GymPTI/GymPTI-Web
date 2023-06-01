@@ -6,7 +6,121 @@
 }
 
 /* Mobile - Portrait */
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+
+    /*백그라운드*/
+    .SignupBody {
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(-50deg, rgba(18, 18, 20, 1) 70%, rgba(18, 18, 20, 0.95));
+    }
+
+    /*로그인 이동*/
+    .AllLoginLink {
+        padding-top: 3%;
+    }
+
+    .LoginLink {
+        color: #737379;
+        font-size: 22px;
+        text-decoration: none;
+        margin-left: 90%;
+        cursor: pointer;
+    }
+
+    /*로고, 로고 밑 멘트*/
+    .SignupLogoName,
+    .SignupWelcomeMessage {
+        margin-left: 24%;
+    }
+
+    .SignupLogoName {
+        color: #fff;
+        font-size: 40px;
+        margin-top: 7%;
+    }
+
+    .SignupWelcomeMessage {
+        color: #737379;
+        font-size: 18px;
+        margin-top: -1.2%;
+
+    }
+
+    /*아이디, 비밀번호, 이메일, 이름 박스*/
+    .SignupIdBox,
+    .SignupPwBox,
+    .SignupEmailBox,
+    .SignupNameBox {
+        display: inline-block;
+    }
+
+    .SignupIdBox,
+    .SignupEmailBox {
+        margin-left: 24%;
+    }
+
+    .SignupPwBox,
+    .SignupNameBox {
+        margin-left: 5%;
+    }
+
+    .SignupEmailBox,
+    .SignupNameBox {
+        margin-top: 2%;
+    }
+
+    .SignupIdBox {
+        margin-top: 3%;
+    }
+
+    /*아이디, 비밀번호*/
+    .SignupIdInputMent,
+    .SignupPwInputMent,
+    .SignupEmailInputMent,
+    .SignupNameMent {
+        color: #737379;
+        font-size: 20px;
+        margin: 0px 0px 5px 5px;
+    }
+
+    .SignupIdInputBox,
+    .SignupPwInputBox,
+    .SignupEmailInputBox,
+    .SignupNameInputBox {
+        width: 350px;
+        height: 60px;
+        padding-inline-start: 25px;
+        padding-inline-end: 25px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        background-color: #202027;
+        font-size: 18px;
+        color: #fff;
+        margin: 0px 0px 0px 0px;
+
+
+    }
+
+    input::placeholder {
+        font-size: 18px;
+        color: rgba(199, 200, 211, 0.2);
+    }
+
+    /*회원가입버튼*/
+    .SignupButton {
+        width: 400px;
+        height: 60px;
+        margin-top: 7%;
+        margin-left: 38%;
+        border-radius: 10px;
+        border: none;
+        background: linear-gradient(-50deg, rgba(112, 0, 255, 1), rgba(70, 38, 146, 1) 60%);
+        font-size: 22px;
+        color: #fff;
+    }
+}
 
 
 /*-----------------------------------------------------*/
@@ -38,38 +152,96 @@
     }
 
     /*로고, 로고 밑 멘트*/
-    .LogoName,
-    .WelcomeMessage {
-        margin-left: 38%;
+    .SignupLogoName,
+    .SignupWelcomeMessage {
+        margin-left: 24%;
     }
 
-    .LogoName {
+    .SignupLogoName {
         color: #fff;
         font-size: 40px;
-        margin-top: 5%;
+        margin-top: 7%;
     }
 
-    .WelcomeMessage {
+    .SignupWelcomeMessage {
         color: #737379;
         font-size: 18px;
         margin-top: -1.2%;
 
     }
 
+    /*아이디, 비밀번호, 이메일, 이름 박스*/
+    .SignupIdBox,
+    .SignupPwBox,
+    .SignupEmailBox,
+    .SignupNameBox {
+        display: inline-block;
+    }
+
+    .SignupIdBox,
+    .SignupEmailBox {
+        margin-left: 24%;
+    }
+
+    .SignupPwBox,
+    .SignupNameBox {
+        margin-left: 5%;
+    }
+
+    .SignupEmailBox,
+    .SignupNameBox {
+        margin-top: 2%;
+    }
+
+    .SignupIdBox {
+        margin-top: 3%;
+    }
+
+    /*아이디, 비밀번호*/
+    .SignupIdInputMent,
+    .SignupPwInputMent,
+    .SignupEmailInputMent,
+    .SignupNameMent {
+        color: #737379;
+        font-size: 20px;
+        margin: 0px 0px 5px 5px;
+    }
+
+    .SignupIdInputBox,
+    .SignupPwInputBox,
+    .SignupEmailInputBox,
+    .SignupNameInputBox {
+        width: 350px;
+        height: 60px;
+        padding-inline-start: 25px;
+        padding-inline-end: 25px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        background-color: #202027;
+        font-size: 18px;
+        color: #fff;
+        margin: 0px 0px 0px 0px;
 
 
+    }
+
+    input::placeholder {
+        font-size: 18px;
+        color: rgba(199, 200, 211, 0.2);
+    }
 
     /*회원가입버튼*/
     .SignupButton {
         width: 400px;
         height: 60px;
+        margin-top: 7%;
         margin-left: 38%;
         border-radius: 10px;
         border: none;
         background: linear-gradient(-50deg, rgba(112, 0, 255, 1), rgba(70, 38, 146, 1) 60%);
         font-size: 22px;
         color: #fff;
-        margin-top: 15%;
     }
 }
 

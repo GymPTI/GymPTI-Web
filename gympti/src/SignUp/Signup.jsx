@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import React, { useState } from "react";
+import React from "react";
 import "../SignUp/Signup.style.css";
 import { useSignup } from "../hooks/Auth/useSignup";
 
@@ -13,15 +13,17 @@ function Signup() {
           Login →
         </Link>
       </div>
-      <h1 className="LogoName">GymPTI</h1>
+      <h1 className="SignupLogoName">GymPTI</h1>
       <div>
-        <p className="WelcomeMessage">나만의 AI PT쌤을 만나러 가볼까요?</p>
+        <p className="SignupWelcomeMessage">
+          나만의 AI PT쌤을 만나러 가볼까요?
+        </p>
       </div>
       <div className="SignupBox">
         <div className="SignupIdBox">
           <p className="SignupIdInputMent">Id</p>
           <input
-            className="SignupIdInputbox"
+            className="SignupIdInputBox"
             type="text"
             placeholder="아이디를 입력하세요"
             value={id}
@@ -33,7 +35,7 @@ function Signup() {
         <div className="SignupPwBox">
           <p className="SignupPwInputMent">Pw</p>
           <input
-            className="SignupPwInputbox"
+            className="SignupPwInputBox"
             type="password"
             placeholder="비밀번호를 입력하세요"
             value={pw}
@@ -46,7 +48,7 @@ function Signup() {
         <div className="SignupEmailBox">
           <p className="SignupEmailInputMent">Email</p>
           <input
-            className="SignupEmailInputbox"
+            className="SignupEmailInputBox"
             type="email"
             placeholder="이메일을 입력하세요"
             value={email}
@@ -59,7 +61,7 @@ function Signup() {
         <div className="SignupNameBox">
           <p className="SignupPwInputMent">Name</p>
           <input
-            className="SignupNameInputbox"
+            className="SignupNameInputBox"
             type="text"
             placeholder="이름을 입력하세요"
             value={name}

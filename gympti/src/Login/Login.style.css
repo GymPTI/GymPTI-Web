@@ -6,16 +6,7 @@
 }
 
 /* Mobile - Portrait */
-@media (max-width: 992px) {}
-
-
-/*-----------------------------------------------------*/
-
-/*-----------------------------------------------------*/
-
-
-/* Desktop */
-@media (min-width: 992px) {
+@media (max-width: 992px) {
 
     /*백그라운드*/
     .LoginBody {
@@ -40,18 +31,18 @@
     }
 
     /*로고, 로고 밑 멘트*/
-    .LogoName,
-    .WelcomeMessage {
+    .LoginLogoName,
+    .LoginWelcomeMessage {
         margin-left: 38%;
     }
 
-    .LogoName {
+    .LoginLogoName {
         color: #fff;
         font-size: 40px;
         margin-top: 5%;
     }
 
-    .WelcomeMessage {
+    .LoginWelcomeMessage {
         color: #737379;
         font-size: 18px;
         margin-top: -1.2%;
@@ -107,16 +98,124 @@
         color: rgba(199, 200, 211, 0.2);
     }
 
-    /*아이디*/
-    .LoginIdInputMent {}
 
-    .LoginIdInputbox {}
+    .img {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /*로그인버튼*/
+    .LoginButton {
+        width: 400px;
+        height: 60px;
+        margin-left: 38%;
+        border-radius: 10px;
+        border: none;
+        background: linear-gradient(-50deg, rgba(112, 0, 255, 1), rgba(70, 38, 146, 1) 60%);
+        font-size: 22px;
+        color: #fff;
+        margin-top: 5%;
+    }
+}
 
 
-    /*비밀번호*/
-    .LoginPwInputMent {}
+/*-----------------------------------------------------*/
 
-    .LoginPwInputbox {}
+/*-----------------------------------------------------*/
+
+
+/* Desktop */
+@media (min-width: 992px) {
+
+    /*백그라운드*/
+    .LoginBody {
+        width: 100vw;
+        height: 100vh;
+        /*background: linear-gradient(90deg, rgb(30, 30, 48) 50%, rgba(32, 9, 9, 0.95)50%);*/
+
+        background: linear-gradient(-50deg, rgba(18, 18, 20, 1) 70%, rgba(18, 18, 20, 0.95));
+    }
+
+    /*회원가입 이동*/
+    .AllSignupLink {
+        padding-top: 3%;
+    }
+
+    .SignupLink {
+        color: #737379;
+        font-size: 22px;
+        text-decoration: none;
+        margin-left: 90%;
+        cursor: pointer;
+    }
+
+    /*로고, 로고 밑 멘트*/
+    .LoginLogoName,
+    .LoginWelcomeMessage {
+        margin-left: 38%;
+    }
+
+    .LoginLogoName {
+        color: #fff;
+        font-size: 40px;
+        margin-top: 5%;
+    }
+
+    .LoginWelcomeMessage {
+        color: #737379;
+        font-size: 18px;
+        margin-top: -1.2%;
+
+    }
+
+
+    /*아이디,비밀번호 박스*/
+    .LoginIdBox,
+    .LoginPwBox {
+        margin-left: 38%;
+    }
+
+    /*아이디 박스*/
+    .LoginIdBox {
+        margin-top: 5%;
+    }
+
+    /*비밀번호 박스*/
+
+    .LoginPwBox {
+        margin-top: 2%;
+    }
+
+
+    /*아이디, 비밀번호*/
+    .LoginIdInputMent,
+    .LoginPwInputMent {
+        color: #737379;
+        font-size: 20px;
+        margin: 0px 0px 5px 5px;
+    }
+
+    .LoginIdInputbox,
+    .LoginPwInputbox {
+        width: 350px;
+        height: 60px;
+        padding-inline-start: 25px;
+        padding-inline-end: 25px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        background-color: #202027;
+        font-size: 18px;
+        color: #fff;
+        margin: 0px 0px 0px 0px;
+
+
+    }
+
+    input::placeholder {
+        font-size: 18px;
+        color: rgba(199, 200, 211, 0.2);
+    }
 
     .img {
         width: 100vw;

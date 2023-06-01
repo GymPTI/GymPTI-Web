@@ -1,4 +1,8 @@
+<!----
+
 import React from "react";
+import { Link } from "react-router-dom";
+import "../EmailCheck/EmailCheck.style.css";
 import { useEmailCheck } from "../hooks/Auth/useEmailCheck";
 
 function EmailCheck() {
@@ -11,15 +15,17 @@ function EmailCheck() {
   } = useEmailCheck();
 
   return (
-    <div>
-      <input
-        type="text"
-        value={email}
-        onChange={onChange}
-        name="email"
-        required
-      ></input>
-      <button onClick={emailButtonClick}>확인</button>
+    <div className="EmailCheckBody">ccc
+      <div>
+        <input
+          type="text"
+          value={email}
+          onChange={onChange}
+          name="email"
+          required
+        ></input>
+        <button onClick={emailButtonClick}>확인</button>
+      </div>
       <div>
         <input
           type="text"
@@ -35,3 +41,4 @@ function EmailCheck() {
 }
 
 export default EmailCheck;
+->

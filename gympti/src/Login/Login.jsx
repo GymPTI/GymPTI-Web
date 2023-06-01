@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import React, { useState } from "react";
-import "./Login.style.css";
+import React from "react";
+import "../Login/Login.style.css";
 import { useLogin } from "../hooks/Auth/useLogin";
 
 function Login() {
@@ -9,13 +9,13 @@ function Login() {
   return (
     <div className="LoginBody">
       <div className="AllSignupLink">
-        <Link to="/signup" className="SignupLink">
+        <Link to="/emailcheck" className="SignupLink">
           Sign up →
         </Link>
       </div>
-      <h1 className="LogoName">GymPTI</h1>
+      <h1 className="LoginLogoName">GymPTI</h1>
       <div>
-        <p className="WelcomeMessage">나만의 AI PT쌤을 만나러 가볼까요?</p>
+        <p className="LoginWelcomeMessage">나만의 AI PT쌤을 만나러 가볼까요?</p>
       </div>
       <div className="LoginBox">
         <div className="LoginIdBox">

@@ -1,0 +1,100 @@
+@media (min-width: 992px) {
+    .EmailCheckBody {
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(-50deg, rgba(18, 18, 20, 1) 70%, rgba(18, 18, 20, 0.95));
+    }
+
+    /*회원가입 이동*/
+    .AllEmailNextLoginLink {
+        padding-top: 3%;
+    }
+
+    .EmailNextLoginLink {
+        color: #737379;
+        font-size: 22px;
+        text-decoration: none;
+        margin-left: 90%;
+        cursor: pointer;
+    }
+
+    /*로고, 로고 밑 멘트*/
+    .EmailCheckLogoName,
+    .EmailCheckWelcomeMessage {
+        margin-left: 38%;
+    }
+
+    .EmailCheckLogoName {
+        color: #fff;
+        font-size: 40px;
+        margin-top: 5%;
+    }
+
+    .EmailCheckWelcomeMessage {
+        color: #737379;
+        font-size: 18px;
+        margin-top: -1.2%;
+    }
+
+    /*이메일,인증번호 박스*/
+    .EmailBox,
+    .EmailAuthenticationNumberBox {
+        margin-left: 38%;
+    }
+
+    /*이메일 박스*/
+    .EmailBox {
+        margin-top: 5%;
+    }
+
+    /*인증번호 박스*/
+
+    .EmailAuthenticationNumberBox {
+        margin-top: 2%;
+    }
+
+
+    /*이메일, 인증번호*/
+    .EmailInputMent,
+    .EmailAuthenticationNumberInputMent {
+        color: #737379;
+        font-size: 20px;
+        margin: 0px 0px 5px 5px;
+    }
+
+    .EmailInputbox,
+    .EmailAuthenticationNumberInputbox {
+        width: 350px;
+        height: 60px;
+        padding-inline-start: 25px;
+        padding-inline-end: 25px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        background-color: #202027;
+        font-size: 18px;
+        color: #fff;
+        margin: 0px 0px 0px 0px;
+
+
+    }
+
+    input::placeholder {
+        font-size: 18px;
+        color: rgba(199, 200, 211, 0.2);
+    }
+
+    /*버튼*/
+    .EmailButton,
+    .EmailAuthenticationNumberButton {
+        width: 400px;
+        height: 60px;
+        margin-left: 38%;
+        border-radius: 10px;
+        border: none;
+        background: linear-gradient(-50deg, rgba(112, 0, 255, 1), rgba(70, 38, 146, 1) 60%);
+        font-size: 22px;
+        color: #fff;
+        margin-top: 2%;
+    }
+}
